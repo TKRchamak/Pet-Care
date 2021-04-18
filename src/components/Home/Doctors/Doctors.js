@@ -1,20 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import './Doctors.css'
-import doctor1 from '../../../Images/doctor1.jpg';
-import doctor2 from '../../../Images/doctor2.jpg';
-import doctor3 from '../../../Images/doctor3.jpg';
-import doctor4 from '../../../Images/doctor4.jpg';
+import './Doctors.css';
 
 const Doctors = () => {
 
 
     const [doctors, setDoctors] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/allDoctors')
+        fetch('https://powerful-spire-56228.herokuapp.com/allDoctors')
             .then(res => res.json())
             .then(data => {
                 setDoctors(data);
-                console.log(data)
             })
     }, []);
 

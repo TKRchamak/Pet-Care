@@ -8,7 +8,6 @@ const AddDoctor = () => {
         const newInfo = { ...info };
         newInfo[e.target.name] = e.target.value;
         setInfo(newInfo);
-
     }
     const handleFileChange = (e) => {
         const newFile = e.target.files[0];
@@ -21,7 +20,7 @@ const AddDoctor = () => {
         formData.append('email', info.email);
         formData.append('file', file);
 
-        fetch('http://localhost:5000/addDoctor', {
+        fetch('https://powerful-spire-56228.herokuapp.com/addDoctor', {
             method: 'POST',
             body: formData
         })

@@ -25,7 +25,7 @@ const AddProduct = () => {
         formData.append('pair', info.pair);
         formData.append('price', info.price);
 
-        fetch('http://localhost:5000/addProducts', {
+        fetch('https://powerful-spire-56228.herokuapp.com/addProducts', {
             method: 'POST',
             body: formData
         })

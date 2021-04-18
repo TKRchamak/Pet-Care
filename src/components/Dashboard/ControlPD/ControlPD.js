@@ -7,7 +7,7 @@ import Loading from '../../Shared/Loading/Loading';
 const ControlPD = () => {
     const [pds, setPds] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/allProducts')
+        fetch('https://powerful-spire-56228.herokuapp.com/allProducts')
             .then(res => res.json())
             .then(data => {
                 setPds(data);
@@ -17,7 +17,7 @@ const ControlPD = () => {
 
 
     const deletePD = (id) => {
-        fetch(`http://localhost:5000/allProducts/${id}`, {
+        fetch(`https://powerful-spire-56228.herokuapp.com/allProducts/${id}`, {
             method: 'DELETE'
         })
             .then(res => {

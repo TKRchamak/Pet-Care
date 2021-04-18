@@ -19,7 +19,7 @@ const Admin = () => {
         // formData.append('email', info.email);
         // formData.append('file', file);
 
-        fetch('http://localhost:5000/addAdmin', {
+        fetch('https://powerful-spire-56228.herokuapp.com/addAdmin', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({ name: info.name, email: info.email })
@@ -38,7 +38,7 @@ const Admin = () => {
 
     const [admins, setAdmin] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/allAdmin')
+        fetch('https://powerful-spire-56228.herokuapp.com/allAdmin')
             .then(res => res.json())
             .then(data => {
                 setAdmin(data);
@@ -48,7 +48,7 @@ const Admin = () => {
 
 
     const deletePD = (id) => {
-        fetch(`http://localhost:5000/allAdmin/${id}`, {
+        fetch(`https://powerful-spire-56228.herokuapp.com/allAdmin/${id}`, {
             method: 'DELETE'
         })
             .then(res => {

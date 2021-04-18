@@ -7,17 +7,16 @@ import Loading from '../../Shared/Loading/Loading';
 const AllDoctor = () => {
     const [doctors, setDoctors] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/allDoctors')
+        fetch('https://powerful-spire-56228.herokuapp.com/allDoctors')
             .then(res => res.json())
             .then(data => {
                 setDoctors(data);
-                console.log(data)
             })
     }, []);
 
 
     const deletePD = (id) => {
-        fetch(`http://localhost:5000/allDoctors/${id}`, {
+        fetch(`https://powerful-spire-56228.herokuapp.com/allDoctors/${id}`, {
             method: 'DELETE'
         })
             .then(res => {

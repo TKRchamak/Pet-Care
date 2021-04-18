@@ -24,22 +24,6 @@ const Login = () => {
             const signedInUser = { name: displayName, email }
             setLoggedInUser(signedInUser);
             storeAuthToken();
-
-            fetch('http://localhost:5000/addCustomer', {
-                method: 'POST',
-                headers: { 'content-type': 'application/json' },
-                body: JSON.stringify({ name: displayName, email })
-            })
-                .then(response => response.json())
-                .then(data => {
-                    if (data) {
-                        // alert('Customer is Login')
-                    }
-                    console.log(data)
-                })
-                .catch(error => {
-                    console.error(error)
-                })
         }).catch(error => {
             const errorMessage = error.message;
             console.log(errorMessage);
@@ -50,7 +34,7 @@ const Login = () => {
     const storeAuthToken = () => {
         firebase.auth().currentUser.getIdToken(true)
             .then(idToken => {
-                sessionStorage.setItem('token', idToken);
+                // sessionStorage.setItem('token', idToken);
                 history.replace(from);
             }).catch(error => {
                 console.log(error)
