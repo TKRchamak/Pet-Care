@@ -1,0 +1,15 @@
+.crd-motion{
+    /* background-image: url('../../../Images/doctor1.jpg'); */
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 18rem;
+}
+
+
+.card-body{
+    background: rgba(165, 165, 165, 0.5);
+    width: 100%;
+    color: #ffffff;
+    margin: auto;
+    z-index: 0;
+}

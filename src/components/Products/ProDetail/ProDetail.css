@@ -1,0 +1,11 @@
+.proStyle{
+    background-color: silver;
+}
+
+.itemStyle{
+    background-color: snow;
+    width: 90%;
+    margin: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
