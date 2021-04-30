@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Pet Care
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is created for care of PETS and anyone can hire a pet for them.
 
 ## Available Scripts
 
