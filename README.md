@@ -2,14 +2,12 @@
 
 This project is created for care of PETS and anyone can hire a pet for them.
 
-## Available Scripts
-
+## live link:
+https://pet-care-tkr.web.app/
 In the project directory, you can run:
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ server site github link: https://github.com/Porgramming-Hero-web-course/complete-website-server-TKRchamak
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
