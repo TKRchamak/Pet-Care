@@ -16,54 +16,54 @@ const Services = () => {
                 <div className="col-md-5">
                     <div className="container pt-4">
                         <h2 className="text-center" style={{ color: '#ffffff' }}>Why <span className="text-style">Choose Use</span> </h2>
-                        <div class="container overflow-hidden pt-4">
-                            <div class="row gy-5">
-                                <div class="col-6 ">
-                                    <div class="p-3 border bg-light rounded">
+                        <div className="container overflow-hidden pt-4">
+                            <div className="row gy-5">
+                                <div className="col-6 ">
+                                    <div className="p-3 border bg-light rounded">
                                         <div className="row">
-                                            <div class="col-3 d-flex align-items-center">
+                                            <div className="col-3 d-flex align-items-center">
                                                 <p style={{ fontSize: "40px" }}><FontAwesomeIcon icon={faPaw} /></p>
                                             </div>
-                                            <div class="col-9">
+                                            <div className="col-9">
                                                 <h5>BEST IN INDUSTRY</h5>
                                                 <p>Lelit. Sitaiores nulla optio ad minus molestiae totam magni!</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <div class="p-3 border bg-light rounded">
+                                <div className="col-6">
+                                    <div className="p-3 border bg-light rounded">
                                         <div className="row">
-                                            <div class="col-3 d-flex align-items-center">
+                                            <div className="col-3 d-flex align-items-center">
                                                 <p style={{ fontSize: "40px" }}><FontAwesomeIcon icon={faHeadset} /></p>
                                             </div>
-                                            <div class="col-9">
+                                            <div className="col-9">
                                                 <h5>CUSTOMER SUPPORT</h5>
                                                 <p>Lelit. Sitaiores nulla optio ad minus molestiae totam magni!</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <div class="p-3 border bg-light rounded">
+                                <div className="col-6">
+                                    <div className="p-3 border bg-light rounded">
                                         <div className="row">
-                                            <div class="col-3 d-flex align-items-center">
+                                            <div className="col-3 d-flex align-items-center">
                                                 <p style={{ fontSize: "40px" }}><FontAwesomeIcon icon={faAmbulance} /></p>
                                             </div>
-                                            <div class="col-9">
+                                            <div className="col-9">
                                                 <h5>EMERGENCY SERVICES</h5>
                                                 <p>Lelit. Sitaiores nulla optio ad minus molestiae totam magni!</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <div class="p-3 border bg-light rounded">
+                                <div className="col-6">
+                                    <div className="p-3 border bg-light rounded">
                                         <div className="row">
-                                            <div class="col-3 d-flex align-items-center">
+                                            <div className="col-3 d-flex align-items-center">
                                                 <p style={{ fontSize: "40px" }}><FontAwesomeIcon icon={faClinicMedical} /></p>
                                             </div>
-                                            <div class="col-9">
+                                            <div className="col-9">
                                                 <h5>VETERINARY HELP</h5>
                                                 <p>Lelit. Sitaiores nulla optio ad minus molestiae totam magni!</p>
                                             </div>

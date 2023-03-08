@@ -10,21 +10,21 @@ const Dashboard = () => {
     const email = loggedInUser.email;
     console.log(email)
 
-    useEffect(()=>{
+    useEffect(() => {
         fetch(`https://powerful-spire-56228.herokuapp.com/allCustomer/${email}`)
-        .then(res => res.json())
-        .then(data => {
-            setCustomers(data);
-            console.log(data);
-        })
-    },[])
+            .then(res => res.json())
+            .then(data => {
+                setCustomers(data);
+                console.log(data);
+            })
+    }, [])
 
     return (
         <section className="row">
             <Sidebar></Sidebar>
             <div className="col-md-10 p-4 ps-5 " style={{ position: "absolute", right: 0, backgroundColor: "#F4FDFB" }}>
-            <h2>All customers</h2>
-                <table class="table">
+                <h2>All customers</h2>
+                <table className="table">
                     <thead>
                         <tr>
                             <th scope="col"></th>

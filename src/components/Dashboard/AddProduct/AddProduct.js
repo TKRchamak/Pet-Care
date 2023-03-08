@@ -18,6 +18,7 @@ const AddProduct = () => {
     }
 
     const handleSubmit = (e) => {
+        e.preventDefault();
         const formData = new FormData()
         formData.append('file', file);
         formData.append('name', info.name);

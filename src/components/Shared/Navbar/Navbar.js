@@ -15,19 +15,19 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container">
-                    <h1 class="navbar-brand" style={{fontSize:"35px"}} href="/">Pet <FontAwesomeIcon icon={faPaw} /> Care</h1>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link ms-3" href="/">Home</a>
-                            <a class="nav-link ms-3" href="/products">Products</a>
-                            <a class="nav-link ms-3" href="/dashboard">Dashboard</a>
-                            <a class="nav-link ms-3" href="/admin">Admin</a>
-                            {/* <a class="nav-link ms-3" href="/dashboard"><FontAwesomeIcon icon={faCartArrowDown} /></a> */}
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div className="container">
+                    <h1 className="navbar-brand" style={{ fontSize: "35px" }} href="/">Pet <FontAwesomeIcon icon={faPaw} /> Care</h1>
+                    <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div className="navbar-nav">
+                            <a className="nav-link ms-3" href="/">Home</a>
+                            <a className="nav-link ms-3" href="/products">Products</a>
+                            <a className="nav-link ms-3" href="/dashboard">Dashboard</a>
+                            <a className="nav-link ms-3" href="/admin">Admin</a>
+                            {/* <a className="nav-link ms-3" href="/dashboard"><FontAwesomeIcon icon={faCartArrowDown} /></a> */}
                             {
-                                loggedInUser.name || token ? <a class="nav-link ms-3 btn btn-style" onClick={handleLogOut} href="/">Log Out</a>
-                                    : <a class="nav-link ms-3 btn btn-style" href="/login">Login</a>
+                                loggedInUser.name || token ? <a className="nav-link ms-3 btn btn-style" onClick={handleLogOut} href="/">Log Out</a>
+                                    : <a className="nav-link ms-3 btn btn-style" href="/login">Login</a>
                             }
                         </div>
                     </div>

@@ -33,7 +33,7 @@ const AllDoctor = () => {
             <Sidebar></Sidebar>
             <div className="col-md-10 p-4 ps-5 " style={{ position: "absolute", right: 0, backgroundColor: "#F4FDFB" }}>
                 <h2>All Doctors</h2>
-                <table class="table">
+                <table className="table">
                     <thead>
                         <tr>
                             <th scope="col"></th>

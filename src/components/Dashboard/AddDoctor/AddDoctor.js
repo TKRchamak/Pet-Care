@@ -4,18 +4,21 @@ import Sidebar from '../Sidebar/Sidebar';
 const AddDoctor = () => {
     const [info, setInfo] = useState({});
     const [file, setFile] = useState(null);
+    console.dir(info);
     const handleBlur = e => {
         const newInfo = { ...info };
         newInfo[e.target.name] = e.target.value;
         setInfo(newInfo);
     }
+
     const handleFileChange = (e) => {
         const newFile = e.target.files[0];
         setFile(newFile);
     }
 
     const handleSubmit = (e) => {
-        const formData = new FormData()
+        e.preventDefault();
+        let formData = new FormData()
         formData.append('name', info.name);
         formData.append('email', info.email);
         formData.append('file', file);

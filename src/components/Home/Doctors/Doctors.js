@@ -20,11 +20,11 @@ const Doctors = () => {
                 <div className="d-flex ">
                     {
                         doctors.map(doctor =>
-                            <div style={{ backgroundImage: `url('data:image/png;base64, ${doctor.image.img}')` }} class="card crd-motion position-relative m-2" >
-                                <div class="card-body position-absolute bottom-0 text-center">
-                                    <h5 class="card-title">{doctor.name}</h5>
-                                    <p class="card-text">Veterinary Doctor</p>
-                                    <a href="#" class="btn btn-style">Contact us</a>
+                            <div style={{ backgroundImage: `url('data:image/png;base64, ${doctor.image.img}')` }} className="card crd-motion position-relative m-2" >
+                                <div className="card-body position-absolute bottom-0 text-center">
+                                    <h5 className="card-title">{doctor.name}</h5>
+                                    <p className="card-text">Veterinary Doctor</p>
+                                    <a href="#" className="btn btn-style">Contact us</a>
                                 </div>
                             </div>
                         )
