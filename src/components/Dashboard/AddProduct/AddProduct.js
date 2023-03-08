@@ -35,8 +35,8 @@ const AddProduct = () => {
                 if (data) {
                     alert('Product is Added')
                 }
-                    console.log(data)
-                })
+                console.log(data)
+            })
             .catch(error => {
                 console.error(error)
             })
@@ -50,24 +50,24 @@ const AddProduct = () => {
                 <h5 className="text-brand">Add a Product</h5>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <label htmlFor="exampleInputEmail1">Product Name</label>
+                        <label htmlhtmlFor="exampleInputEmail1">Product Name</label>
                         <input onBlur={handleBlur} type="text" className="form-control" name="name" placeholder="Enter Product Name" />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="exampleInputPassword1">Type</label>
+                        <label htmlhtmlFor="exampleInputPassword1">Type</label>
                         <input onBlur={handleBlur} type="text" className="form-control" name="type" placeholder="Cat / Dog / Bird" />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="exampleInputPassword1">Pair / Non-pair</label>
+                        <label htmlhtmlFor="exampleInputPassword1">Pair / Non-pair</label>
                         <input onBlur={handleBlur} type="text" className="form-control" name="pair" placeholder="Pair / non-pair" />
                     </div>
-                    
+
                     <div className="form-group">
-                        <label htmlFor="exampleInputPassword1">Price</label>
+                        <label htmlhtmlFor="exampleInputPassword1">Price</label>
                         <input onBlur={handleBlur} type="text" className="form-control" name="price" placeholder="Price" />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="exampleInputPassword1">Upload a image</label>
+                        <label htmlhtmlFor="exampleInputPassword1">Upload a image</label>
                         <input onChange={handleFileChange} type="file" className="form-control" id="exampleInputPassword1" placeholder="Picture" />
                     </div>
                     <button type="submit" className="btn btn-primary">Submit</button>

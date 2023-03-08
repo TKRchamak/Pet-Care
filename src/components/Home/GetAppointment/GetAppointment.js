@@ -48,27 +48,27 @@ const GetAppointment = () => {
                         <div>
                             <form onSubmit={handleCustomerService} className="row g-3">
                                 <div className="col-md-6">
-                                    <label for="inputEmail4" className="form-label">Email</label>
+                                    <label htmlFor="inputEmail4" className="form-label">Email</label>
                                     <input onBlur={handleBlur} type="email" className="form-control" name="email" id="inputEmail4" />
                                 </div>
                                 <div className="col-md-6">
-                                    <label for="inputText4" className="form-label">Person Name</label>
+                                    <label htmlFor="inputText4" className="form-label">Person Name</label>
                                     <input onBlur={handleBlur} type="text" className="form-control" name="person" id="inputText4" />
                                 </div>
                                 <div className="col-md-6">
-                                    <label for="inputPhone4" className="form-label">Phone</label>
+                                    <label htmlFor="inputPhone4" className="form-label">Phone</label>
                                     <input onBlur={handleBlur} type="text" className="form-control" name="phone" id="inputPhone4" />
                                 </div>
                                 <div className="col-md-6">
-                                    <label for="inputDate4" className="form-label">Reservation Date</label>
+                                    <label htmlFor="inputDate4" className="form-label">Reservation Date</label>
                                     <input onBlur={handleBlur} type="text" className="form-control" name="date" id="inputDate4" />
                                 </div>
                                 <div className="col-12">
-                                    <label for="inputAddress" className="form-label">Address</label>
+                                    <label htmlFor="inputAddress" className="form-label">Address</label>
                                     <input onBlur={handleBlur} type="text" className="form-control" name="address" id="inputAddress" placeholder="1234 Main St" />
                                 </div>
                                 <div className="col-12">
-                                    <label for="inputAddress" className="form-label">Service Name</label>
+                                    <label htmlFor="inputAddress" className="form-label">Service Name</label>
                                     <input onBlur={handleBlur} type="text" className="form-control" name="service" id="inputAddress" placeholder="Pet House/ Pet Doctor....." />
                                 </div>
                                 <div className="col-12">
