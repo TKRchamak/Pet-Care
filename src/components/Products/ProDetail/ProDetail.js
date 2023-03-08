@@ -5,15 +5,18 @@ import './ProDetail.css'
 
 
 const ProDetail = () => {
-
-    const [loggedInUser, setLoggedInUser] = useContext(UserContext)
-    console.log(loggedInUser)
+    const [loggedInUser] = useContext(UserContext)
+    // console.log(loggedInUser)
     const [pds, setPds] = useState([])
+
     useEffect(() => {
         fetch('https://powerful-spire-56228.herokuapp.com/allProducts')
             .then(res => res.json())
             .then(data => {
                 setPds(data);
+            })
+            .catch(err => {
+                console.log(err);
             })
     }, []);
 
@@ -52,6 +55,7 @@ const ProDetail = () => {
                 </div>
             }
             {
+                (pds.length > 0) &&
                 pds.map(pd =>
                     <div className="row p-5 itemStyle" key={pd._id}>
                         <div className="col-md-5">

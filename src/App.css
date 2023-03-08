@@ -1,5 +1,4 @@
-
-.btn-style{
+.btn-style {
   background-image: linear-gradient(90deg, #3AAFA9, #3BAEA9);
   border-color: transparent;
   text-transform: uppercase;
@@ -7,10 +6,10 @@
   font-weight: 600;
 }
 
-.text-style{
+.text-style {
   color: #3BAEA9;
 }
 
-a{
+a {
   text-decoration: none;
 }
