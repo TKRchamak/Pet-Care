@@ -11,10 +11,10 @@ const Home = () => {
         <div>
             <Header></Header>
             <Welcome></Welcome>
-            <Services></Services>
-            <Doctors></Doctors>
-            <GetAppointment></GetAppointment>
-            <Footer></Footer>
+            {/* <Services></Services> */}
+            {/* <Doctors></Doctors> */}
+            {/* <GetAppointment></GetAppointment> */}
+            {/* <Footer></Footer> */}
         </div>
     );
 };

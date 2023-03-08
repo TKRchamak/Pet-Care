@@ -2,12 +2,10 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Home from './components/Home/Home/Home';
 import Products from './components/Products/Products/Products';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 import AddProduct from './components/Dashboard/AddProduct/AddProduct';
 import AddDoctor from './components/Dashboard/AddDoctor/AddDoctor';
