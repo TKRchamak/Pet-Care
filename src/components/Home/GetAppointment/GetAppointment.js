@@ -6,7 +6,8 @@ import { faHeadset } from '@fortawesome/free-solid-svg-icons'
 import { faAmbulance } from '@fortawesome/free-solid-svg-icons'
 import { faClinicMedical } from '@fortawesome/free-solid-svg-icons'
 import { faPaw } from '@fortawesome/free-solid-svg-icons'
-import { indexOf } from 'lodash';
+import AppointmentCard from '../../Shared/AppointmentCard/AppointmentCard';
+// import { indexOf } from 'lodash';
 
 const GetAppointment = () => {
     const [info, setInfo] = useState({});
@@ -40,9 +41,9 @@ const GetAppointment = () => {
 
     return (
         <div className="appointmentStyle" style={{ backgroundImage: `url(${bird1})`, color: "#ffffff" }}>
-            <div className="row centeraized">
-                <div className="col-md-6">
-                    <div className="container">
+            <div className='container'>
+                <div className="row g-0 p-2 py-md-4">
+                    <div className="col-md-6">
                         <h2 style={{ color: "#ffffff", fontSize: "bold" }}>Get A <span className="text-style">Service Now!</span></h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem earum cumque tempora blanditiis magnam! Quam sequi laudantifacere quibusdam quisquam illo eaque?</p>
                         <div>
@@ -77,42 +78,20 @@ const GetAppointment = () => {
                             </form>
                         </div>
                     </div>
-                </div>
-                <div className="col-md-6 ">
-                    <div className="container pt-4">
-                        <div className="container overflow-hidden pt-4">
-                            <div className="row gy-5">
-                                <div className="col-6 ">
-                                    <div className="p-3 rounded text-center">
-                                        <p style={{ fontSize: "40px" }}><FontAwesomeIcon icon={faPaw} /></p>
-                                        <h3 className="text-style"> 756</h3>
-                                        <h6 style={{ fontSize: "bold" }}>CUSTOMERS</h6>
-                                        <p>Lelit. Sitaiores nulla optio ad minus molestiae totam magni!</p>
-                                    </div>
+                    <div className="col-md-6 ">
+                        <div className='py-4 px-md-4'>
+                            <div className="row g-3">
+                                <div className="col-md-6">
+                                    <AppointmentCard title={"CUSTOMERS"} icon={<FontAwesomeIcon icon={faPaw} />} numb={"756"} pera={"Lelit. Sitaiores nulla optio ad minus molestiae totam magni!"} />
                                 </div>
-                                <div className="col-6">
-                                    <div className="p-3 rounded text-center">
-                                        <p style={{ fontSize: "40px" }}><FontAwesomeIcon icon={faHeadset} /></p>
-                                        <h3 className="text-style"> 756</h3>
-                                        <h6 style={{ fontSize: "bold" }}>PROFESSIONALS</h6>
-                                        <p>Lelit. Sitaiores nulla optio ad minus molestiae totam magni!</p>
-                                    </div>
+                                <div className="col-md-6">
+                                    <AppointmentCard title={"PROFESSIONALS"} icon={<FontAwesomeIcon icon={faHeadset} />} numb={"756"} pera={"Lelit. Sitaiores nulla optio ad minus molestiae totam magni!"} />
                                 </div>
-                                <div className="col-6">
-                                    <div className="p-3 rounded text-center">
-                                        <p style={{ fontSize: "40px" }}><FontAwesomeIcon icon={faAmbulance} /></p>
-                                        <h3 className="text-style"> 756</h3>
-                                        <h6 style={{ fontSize: "bold" }}>PRODUCTS</h6>
-                                        <p>Lelit. Sitaiores nulla optio ad minus molestiae totam magni!</p>
-                                    </div>
+                                <div className="col-md-6">
+                                    <AppointmentCard title={"PRODUCTS"} icon={<FontAwesomeIcon icon={faAmbulance} />} numb={"756"} pera={"Lelit. Sitaiores nulla optio ad minus molestiae totam magni!"} />
                                 </div>
-                                <div className="col-6">
-                                    <div className="p-3 rounded text-center">
-                                        <p style={{ fontSize: "40px" }}><FontAwesomeIcon icon={faClinicMedical} /></p>
-                                        <h3 className="text-style"> 756</h3>
-                                        <h6 style={{ fontSize: "bold" }}>PET HOSTED</h6>
-                                        <p>Lelit. Sitaiores nulla optio ad minus molestiae totam magni!</p>
-                                    </div>
+                                <div className="col-md-6">
+                                    <AppointmentCard title={"PET HOSTED"} icon={<FontAwesomeIcon icon={faClinicMedical} />} numb={"756"} pera={"Lelit. Sitaiores nulla optio ad minus molestiae totam magni!"} />
                                 </div>
                             </div>
                         </div>

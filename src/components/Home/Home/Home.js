@@ -11,9 +11,9 @@ const Home = () => {
         <div>
             <Header></Header>
             <Welcome></Welcome>
-            {/* <Services></Services> */}
+            <Services></Services>
             {/* <Doctors></Doctors> */}
-            {/* <GetAppointment></GetAppointment> */}
+            <GetAppointment></GetAppointment>
             {/* <Footer></Footer> */}
         </div>
     );
